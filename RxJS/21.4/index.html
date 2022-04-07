@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observables</title>
+    <script src="https://unpkg.com/rxjs@7.5.5/dist/bundles/rxjs.umd.min.js"></script>
+    <script>
+        const { Observable } = rxjs;
+        const objs = new Observable(subscriber => {
+
+            //next, error, complete
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.complete();
+
+        });
+        objs.subscribe(
+            v => { console.log(v); }, 
+            error => { console.log(error) },
+            () => { console.log('Completed') },
+        );
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

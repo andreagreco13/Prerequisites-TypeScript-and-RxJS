@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var isFinished;
+isFinished = true;
+var myname;
+myname = "5";
+var age = 54;
+var lastname = "Eyyy";
+var anni = 3;
+var prova = 4 > 5;
+var month = ['a', 'b', 'c'];
+var numbers = [1, 2, 3];
+var obj = {};
+obj = 5;
+console.log(obj.toString());
+var fruits = ['mela', 'pera', 'banana'];
